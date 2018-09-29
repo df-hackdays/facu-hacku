@@ -8,7 +8,7 @@ class hintButton extends Component {
     return (
       <div>
         <button className="hint">
-          <Link to="/hints"> Get a Hint</Link>
+          <Link to="/section"> Get a Hint</Link>
         </button>
       </div>
     )

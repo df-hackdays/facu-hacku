@@ -18,7 +18,7 @@ class Home extends Component {
         </div>
 
         <div>
-          <div className="hintMessage">{hint}</div>
+          {/* <div className="hintMessage">{hint}</div> */}
         </div>
       </div>
     )

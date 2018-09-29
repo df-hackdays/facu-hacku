@@ -1,0 +1,11 @@
+.sectionContainer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.section {
+    color: black;
+    flex: 1;
+
+}
