@@ -3,30 +3,22 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { bindActionCreators } from 'redux'
 import { getHint } from '../../actions/hintaction'
-import './hints.css'
+import './success.css'
 import '../../components/Button.css'
 
-class Hints extends Component {
-  nextHint = () => {
-    this.props.getHint()
-  }
-
+class Success extends Component {
   render() {
     console.log(this.props.hint)
 
-    let hint = this.props.hint.hint
+    let positive = this.props.hint.positive
 
     return (
       <div className="container">
-        <h1 className="title">{hint.title}</h1>
-        <div className="message">{hint.text}</div>
-        <div>Did that help? </div>
-        <ul className="yesNo">
+        <h1 className="title">{positive.title}</h1>
+        <div className="message">{positive.text}</div>
+        <ul className="done">
           <button className="button">
-            <Link to="/success">Yes</Link>
-          </button>
-          <button className="button" onClick={this.nextHint}>
-            No
+            <Link to="/">Done</Link>
           </button>
         </ul>
       </div>
@@ -49,4 +41,4 @@ function mapStateToProps({ needHintReducer }) {
 export default connect(
   mapStateToProps,
   mapActionsToProps
-)(Hints)
+)(Success)

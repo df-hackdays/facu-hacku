@@ -27,17 +27,32 @@ class Section extends Component {
           </button>
         </div>
         <div className="buttonContainer">
-          <button className="button">
+          <button
+            className="button"
+            onClick={() => {
+              this.buttonClick(0)
+            }}
+          >
             <Link to="/hints"> Section 2</Link>
           </button>
         </div>
         <div className="buttonContainer">
-          <button className="button">
+          <button
+            className="button"
+            onClick={() => {
+              this.buttonClick(0)
+            }}
+          >
             <Link to="/hints"> Section 3</Link>
           </button>
         </div>
         <div className="buttonContainer">
-          <button className="button">
+          <button
+            className="button"
+            onClick={() => {
+              this.buttonClick(0)
+            }}
+          >
             <Link to="/hints"> Section 4</Link>
           </button>
         </div>
