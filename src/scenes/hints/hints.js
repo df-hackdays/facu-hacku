@@ -28,6 +28,9 @@ class Hints extends Component {
           <button className="button" onClick={this.nextHint}>
             No
           </button>
+          <button className="button">
+            <Link to="/mentor">Call a Mentor</Link>
+          </button>
         </ul>
       </div>
     )
