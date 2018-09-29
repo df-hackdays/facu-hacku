@@ -7,6 +7,28 @@ import './hints.css'
 import '../../components/Button.css'
 
 class Hints extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      show: false
+    }
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        show: true
+      })
+    }, 300)
+  }
+
+  handleClick = () => {
+    this.setState({
+      show: false
+    })
+  }
+
   nextHint = () => {
     this.props.getHint()
   }
@@ -16,23 +38,27 @@ class Hints extends Component {
 
     let hint = this.props.hint.hint
 
+    let className = `container question-wrapper fade-component ${this.state.show ? 'show' : ''}`
+
     return (
-      <div className="container">
-        <h1 className="titleHint">{hint.title}</h1>
-        <div className="message">{hint.text}</div>
-        <div className="didThatHelp">Was this hint helpful? </div>
-        <ul className="yesNo">
-          <button className="button">
-            <Link to="/success">Yes</Link>
-          </button>
-          <div className="space"/>
-          <button className="button" onClick={this.nextHint}>
-            No
-          </button>
-          <button className="button">
-            <Link to="/mentor">Call a Mentor</Link>
-          </button>
-        </ul>
+      <div className={className}>
+        <div className="container">
+          <h1 className="titleHint">{hint.title}</h1>
+          <div className="message">{hint.text}</div>
+          <div className="didThatHelp">Was this hint helpful? </div>
+          <ul className="yesNo">
+            <button className="button" onClick={this.handleClick}>
+              <Link to="/success">Yes</Link>
+            </button>
+            <div className="space" />
+            <button className="button" onClick={this.nextHint}>
+              No
+            </button>
+            <button className="button" onClick={this.handleClick}>
+              <Link to="/mentor">Call a Mentor</Link>
+            </button>
+          </ul>
+        </div>
       </div>
     )
   }

@@ -5,7 +5,7 @@
   flex-direction: column;
 }
 .titlePositive {
-  color:black;
+  color: black;
   /* text-outline: 1px 1px 0; */
   font-weight: 900;
   padding: 100px;
@@ -20,4 +20,19 @@
 }
 .done {
   color: black;
+}
+.fade-component {
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(5);
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
 }

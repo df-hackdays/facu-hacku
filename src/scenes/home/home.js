@@ -6,21 +6,38 @@ import MentorButton from '../../components/mentorButton'
 import './home.css'
 
 class Home extends Component {
-  render() {
-    let hint = this.props.hint
-    console.log(hint)
-    return (
-      <div className="homeContainer">
-        <div className="hello">Hello, Marie.</div>
-        <div className="needHelp">Need Help?</div>
-        <div className="buttonLocation">
-         <div/>
-          <HintButton />
-          <MentorButton />
-          <div/>
-        </div>
+  constructor(props) {
+    super(props)
 
-        <div />
+    this.state = {
+      show: false
+    }
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        show: true
+      })
+    }, 300)
+  }
+
+  render() {
+    let className = `container question-wrapper fade-component ${this.state.show ? 'show' : ''}`
+    return (
+      <div className={className}>
+        <div className="homeContainer">
+          <div className="hello">Hello, Marie.</div>
+          <div className="needHelp">Need Help?</div>
+          <div className="buttonLocation">
+            <div />
+            <HintButton />
+            <MentorButton />
+            <div />
+          </div>
+
+          <div />
+        </div>
       </div>
     )
   }
