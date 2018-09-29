@@ -1,0 +1,9 @@
+.code {
+    position: absolute;
+    top: 200px;
+    width: 600px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+
+}

@@ -48,3 +48,23 @@
 .fr-icon {
   color: #ff0000 !important;
 }
+
+.hint {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.mentor {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  right: 200px;
+  top: 0px;
+  font-size: 30px;
+  font-weight: 800;
+}
