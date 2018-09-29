@@ -1,27 +1,27 @@
-import React, {Component} from 'react'
-import {Link} from 'react-router-dom'
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import './nav.css'
 
 class NavBar extends Component {
-  
-  getHint() {
-    return (
-     <div>error</div>
-    )
-  }
+  getHint() {}
+
   render() {
-    return <header className="nav-wrapper container">
-    <div className="nav-bar row col-md-12">
-      <div className="nav-logo">
-        <img src="" />
-      </div>
-      <ul className="nav-list">
-        <button className="hint" onClick={this.getHint}><Link to='/'>GET A HINT</Link></button>
-        <button className="mentor">ASK A MENTOR</button>
-        
-      </ul>
-    </div>
-    </header>
+    return (
+      <header className="nav-wrapper container">
+        <div className="nav-bar row col-md-12">
+          <div className="nav-logo">
+            <img class="siteNav-logo" src="https://www.canadalearningcode.ca/wp-content/uploads/clc-logo-1.svg" alt="clc logo" />
+          </div>
+          <ul className="nav-list">
+            <li>
+              <button className="btn" onClick={this.clickButton}>
+                I Need A Hint
+              </button>
+            </li>
+          </ul>
+        </div>
+      </header>
+    )
   }
 }
 
