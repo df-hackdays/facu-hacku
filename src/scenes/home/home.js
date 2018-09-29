@@ -10,10 +10,14 @@ class Home extends Component {
     let hint = this.props.hint
     console.log(hint)
     return (
-      <div>
+      <div className="homeContainer">
+        <div className="hello">Hello, Marie.</div>
+        <div className="needHelp">Need Help?</div>
         <div className="buttonLocation">
+         <div/>
           <HintButton />
           <MentorButton />
+          <div/>
         </div>
 
         <div />

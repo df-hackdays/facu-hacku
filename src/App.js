@@ -16,6 +16,7 @@ class App extends Component {
       <div className="info">
         <div className="time">10:30</div>
         <div className="date">September 29, 2018</div>
+        <br/>
         <div className="name">Ladies Learning Code</div>
         <div className="classNumber">Workshop 3</div>
      </div>
