@@ -6,7 +6,7 @@ class mentorButton extends Component {
   render() {
     return (
       <div>
-        <button className="button">Call a Mentor</button>
+        <button className="button">Ask a Mentor</button>
       </div>
     )
   }

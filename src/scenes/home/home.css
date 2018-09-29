@@ -13,22 +13,23 @@
   padding-top: 5%;
 }
 .hello {
-  color: white;
+  color: black;
   font-size: 70px;
   display: inline-block;
   flex-direction: row;
   display: flex;
   justify-content: center;
   padding-top: 100px;
-  font-weight: 900px;
+  font-weight: 900;
 }
 .needHelp {
-  color: white;
+  color: black;
   font-size: 40px;
   display: inline-block;
   flex-direction: row;
   display: flex;
   justify-content: center;
   padding-top: 30%;
+  font-weight: 500;
  
 }
