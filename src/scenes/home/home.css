@@ -1,14 +1,4 @@
-.code {
-    position: absolute;
-    top: 150px;
-    left: 100px;
-    width: 800px;
-    height: 280px;
-    border-width: 1px;
-    border-color: black;
-    border-style: solid;
 
-}
 .hintMessage {
     position: absolute;
     top: 500px;
@@ -20,12 +10,14 @@
     height: 200px;
     left: 100px;
 }
-.output {
-    position: absolute;
-    top: 600px;
-    left: 100px;
-    width: 800px;
-    border-width: 1px;
-    border-color: black;
-    border-style: solid;
+
+
+.buttonLocation { 
+    display: inline-block;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+
 }
+

@@ -20,11 +20,12 @@ export function needHintReducer(state = {index: 0}, action) {
       return {
         index: index,
         hint: hints[index].hint,
-        
       }
     }
   }
-  return {...state}
+  return {...state,
+    hint: hints[state.index].hint
+  }
 }
 
 export default needHintReducer
