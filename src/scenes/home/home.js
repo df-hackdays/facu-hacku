@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import HintButton from '../../components/hintButton'
 import MentorButton from '../../components/mentorButton'
@@ -12,14 +13,13 @@ class Home extends Component {
     return (
       <div>
         <div className="buttonLocation">
-        <HintButton/>
-        <MentorButton/> 
+          <HintButton />
+          <MentorButton />
         </div>
 
         <div>
-        <div className="hintMessage">{hint}</div>
+          <div className="hintMessage">{hint}</div>
         </div>
-
       </div>
     )
   }
@@ -28,6 +28,5 @@ class Home extends Component {
 function mapStateToProps({ needHintReducer }) {
   return { hint: needHintReducer.hint }
 }
-
 
 export default connect(mapStateToProps)(Home)
