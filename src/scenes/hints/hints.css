@@ -5,25 +5,26 @@
   flex-direction: column;
 }
 .titleHint {
-  color: black;
+  color: white;
   font-weight: 900;
   padding: 10px;
+  padding-top: 100px;
 }
 
-.message {
-  color: black;
+.messageHint {
+  color: white;
   font-size: 23px;
-  font-weight: 900;
+  font-weight: 500;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 .didThatHelp {
-  color: black;
+  color: white;
   font-size: 30px;
-  font-weight: 800;
+  font-weight: 700;
 }
 .yesNo {
-  color: black;
+  color: white;
   padding: 50px;
   display: flex;
   flex-direction: row;
@@ -31,4 +32,10 @@
 
 .space {
   padding: 10px;
+}
+
+.gobackArrow {
+  height: 30px;
+  transform: rotate(180deg);
+  
 }

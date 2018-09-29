@@ -7,7 +7,7 @@ class Mentor extends Component {
   render() {
     return (
       <div className="container">
-        <h1 className="title">A mentor will be by to see how you're doing!</h1>
+        <h1 className="title">A mentor will come by to see how you're doing!</h1>
         <ul className="done">
           <button className="button">
             <Link to="/">Thanks!</Link>

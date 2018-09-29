@@ -14,23 +14,23 @@
   padding-bottom: 20%;
 }
 .hello {
-  color: black;
+  color: white;
   font-size: 70px;
   display: inline-block;
   flex-direction: row;
   display: flex;
   justify-content: center;
-  padding-top: 300;
+  padding-top: 200px;
   font-weight: 900;
 }
 .needHelp {
-  color: black;
-  font-size: 35px;
+  color: white;
+  font-size: 30px;
   display: inline-block;
   flex-direction: row;
   display: flex;
   justify-content: center;
-  padding-top: 300px;
+  padding-top: 200px;
   font-weight: 600;
  
 }

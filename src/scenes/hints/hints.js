@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { bindActionCreators } from 'redux'
 import { getHint } from '../../actions/hintaction'
 import './hints.css'
+import Arrow from '../../../src/Arrow.png'
 import '../../components/Button.css'
 
 class Hints extends Component {
@@ -19,7 +20,7 @@ class Hints extends Component {
     return (
       <div className="container">
         <h1 className="titleHint">{hint.title}</h1>
-        <div className="message">{hint.text}</div>
+        <div className="messageHint">{hint.text}</div>
         <div className="didThatHelp">Was this hint helpful? </div>
         <ul className="yesNo">
           <button className="button">
@@ -30,6 +31,7 @@ class Hints extends Component {
             No
           </button>
         </ul>
+        <div onClick={this.props.history.goBack}><img className="gobackArrow" src={Arrow}/></div>
       </div>
     )
   }

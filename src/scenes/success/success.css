@@ -5,19 +5,19 @@
   flex-direction: column;
 }
 .titlePositive {
-  color:black;
+  color:white;
   /* text-outline: 1px 1px 0; */
   font-weight: 900;
   padding: 100px;
   font-size: 50px;
 }
 .messagePositive {
-  color: black;
+  color: white;
   font-weight: 900;
   padding-top: 50px;
   padding-bottom: 30px;
   font-size: 20px;
 }
 .done {
-  color: black;
+  color: white;
 }
