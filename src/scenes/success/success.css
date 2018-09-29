@@ -5,10 +5,11 @@
   flex-direction: column;
 }
 .title {
-  color: white;
-  text-outline: 1px 1px 0;
+  color:black;
+  /* text-outline: 1px 1px 0; */
   font-weight: 900;
   padding: 150px;
+  font-size: 40px;
 }
 .message {
   color: black;

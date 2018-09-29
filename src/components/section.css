@@ -8,6 +8,8 @@
     color: black;
     flex: 1;
     margin: 50px;
+    font-size: 30px;
+    font-weight: 600;
 }
 .buttonContainer {
     justify-content: center;

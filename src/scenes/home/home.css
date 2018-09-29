@@ -10,7 +10,8 @@
   display: flex;
   justify-content: space-around;
   height: 100px;
-  padding-top: 5%;
+  padding-top: 50px;
+  padding-bottom: 20%;
 }
 .hello {
   color: black;
@@ -19,17 +20,17 @@
   flex-direction: row;
   display: flex;
   justify-content: center;
-  padding-top: 100px;
+  padding-top: 300;
   font-weight: 900;
 }
 .needHelp {
   color: black;
-  font-size: 40px;
+  font-size: 35px;
   display: inline-block;
   flex-direction: row;
   display: flex;
   justify-content: center;
-  padding-top: 30%;
-  font-weight: 500;
+  padding-top: 300px;
+  font-weight: 600;
  
 }
