@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { bindActionCreators } from 'redux'
 import { getHint } from '../../actions/hintaction'
-import '../home/home.css'
+import './hints.css'
 
 class Hints extends Component {
   componentDidMount = () => {
@@ -17,22 +17,23 @@ class Hints extends Component {
     let hint = this.props.hint
 
     return (
-      <div className="nav-bar row col-md-12">
-        <div className="nav-logo" />
+      <div className="container">
+      <div className="hintMessage">{hint}</div>
+        <div/>
         Did that help?
         <br />
-        <ul className="nav-list">
+        <ul className="yesNo">
           <li>
-            <button className="hint">
+            <button className="yes">
               <Link to="/">Yes</Link>
             </button>
-            <button className="mentor" onClick={this.nextHint}>
+            <button className="no" onClick={this.nextHint}>
               No
             </button>
-            <div className="underline" />
+         
           </li>
         </ul>
-        <div className="hintMessage">{hint}</div>
+        
       </div>
     )
   }

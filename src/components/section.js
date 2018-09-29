@@ -10,16 +10,16 @@ class Section extends Component {
       <div className="sectionContainer">
          Select the section you are having trouble with
       <button className="section">
-       < Link to="/hints"> section 1</Link>
+       < Link to="/hints"> Section 1</Link>
       </button>
       <button className="section">
-       < Link to="/hints"> section 2</Link>
+       < Link to="/hints"> Section 2</Link>
       </button>
       <button className="section">
-       < Link to="/hints"> section 3</Link>
+       < Link to="/hints"> Section 3</Link>
       </button>
       <button className="section">
-       < Link to="/hints"> section 4</Link>
+       < Link to="/hints"> Section 4</Link>
       </button>
 
       </div>

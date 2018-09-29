@@ -6,6 +6,7 @@ import './Button.css'
 class hintButton extends Component {
   render() {
     return (
+    
       <div>
         <button className="hint">
           <Link to="/section"> Get a Hint</Link>
