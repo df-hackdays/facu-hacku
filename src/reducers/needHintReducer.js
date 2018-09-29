@@ -22,6 +22,26 @@ export function needHintReducer(state = { index: 0 }, action) {
         title: 'Good catch!',
         text: 'Forgetting to set variables is a common mistake everyone makes!'
       }
+    },
+    {
+      hint: {
+        title: 'Hint 3',
+        text: 'Text 3'
+      },
+      positive: {
+        title: 'Positive 3',
+        text: 'Text 3'
+      }
+    },
+    {
+      hint: {
+        title: 'Hint 4',
+        text: 'Text 4'
+      },
+      positive: {
+        title: 'Positive 4',
+        text: 'Text 4'
+      }
     }
   ]
   console.log(hints)
