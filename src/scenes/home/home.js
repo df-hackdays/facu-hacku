@@ -10,7 +10,6 @@ import DoneRating from '../../../src/doneRating.png'
 import './home.css'
 
 class Home extends Component {
-
   constructor(props) {
     super(props)
 

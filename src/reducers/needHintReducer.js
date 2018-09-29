@@ -9,8 +9,8 @@ export function needHintReducer(state = { index: 0 }, action) {
         text: 'Make sure there are no highlighted errors, as they are showing parts of the code that the program cannot understand.'
       },
       positive: {
-        title: 'Good job!',
-        text: "Don't worry!  Everyone makes misakes!"
+        title: 'CLC Coder Top Tip:',
+        text: 'Look carefully at the errors listed in your editor.  They will point you in the right direction'
       }
     },
     {
@@ -19,28 +19,18 @@ export function needHintReducer(state = { index: 0 }, action) {
         text: 'If there are any unset variables, the program cannot continue as they are not defined.'
       },
       positive: {
-        title: 'Good catch!',
-        text: 'Forgetting to set variables is a common mistake everyone makes!'
+        title: 'CLC Coder Top Tip:',
+        text: "Don't be afraid to ask questions!  Coding is continous learning!"
       }
     },
     {
       hint: {
-        title: 'Hint 3',
-        text: 'Text 3'
+        title: 'Make sure you are calling the correct variables and methods!',
+        text: 'It can be easy to use the incorrect variable or call the wrong method.  Double check your work!'
       },
       positive: {
-        title: 'Positive 3',
-        text: 'Text 3'
-      }
-    },
-    {
-      hint: {
-        title: 'Hint 4',
-        text: 'Text 4'
-      },
-      positive: {
-        title: 'Positive 4',
-        text: 'Text 4'
+        title: 'CLC Coder Top Tip:',
+        text: 'Good habits are formed over time, through practice and experience!'
       }
     }
   ]
