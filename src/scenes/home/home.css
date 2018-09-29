@@ -1,9 +1,36 @@
 
+.homeContainer {
+  justify-content: center;
+  align-items: center;
+
+}
 .buttonLocation {
   display: inline-block;
   flex-direction: row;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   height: 100px;
-  padding-top: 50%;
+  padding-top: 50px;
+  padding-bottom: 20%;
+}
+.hello {
+  color: black;
+  font-size: 70px;
+  display: inline-block;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  padding-top: 300;
+  font-weight: 900;
+}
+.needHelp {
+  color: black;
+  font-size: 35px;
+  display: inline-block;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  padding-top: 300px;
+  font-weight: 600;
+ 
 }

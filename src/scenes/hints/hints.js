@@ -18,13 +18,14 @@ class Hints extends Component {
 
     return (
       <div className="container">
-        <h1 className="title">{hint.title}</h1>
+        <h1 className="titleHint">{hint.title}</h1>
         <div className="message">{hint.text}</div>
-        <div>Did that help? </div>
+        <div className="didThatHelp">Was this hint helpful? </div>
         <ul className="yesNo">
           <button className="button">
             <Link to="/success">Yes</Link>
           </button>
+          <div className="space"/>
           <button className="button" onClick={this.nextHint}>
             No
           </button>

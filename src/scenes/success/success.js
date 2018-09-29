@@ -14,8 +14,8 @@ class Success extends Component {
 
     return (
       <div className="container">
-        <h1 className="title">{positive.title}</h1>
-        <div className="message">{positive.text}</div>
+        <h1 className="titlePositive">{positive.title}</h1>
+        <div className="messagePositive">{positive.text}</div>
         <ul className="done">
           <button className="button">
             <Link to="/">Done</Link>

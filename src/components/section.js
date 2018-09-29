@@ -14,7 +14,8 @@ class Section extends Component {
   render() {
     return (
       <div className="sectionContainer">
-        <div className="section">Select the section you are having trouble with</div>
+      <div className="hello">Hello, Marie. </div>
+        <div className="section">Which section do you need help with?</div>
         <div className="buttonContainer">
           <button
             className="button"
