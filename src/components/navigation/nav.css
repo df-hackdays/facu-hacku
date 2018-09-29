@@ -1,12 +1,8 @@
 .nav-wrapper {
   align-items: center;
-  font-family: 'helvetica neue'
-}
-
-.nav-logo {
-  align-self: flex-start;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  font-family: 'helvetica neue';
+  height: 100px;
+  border-bottom: 1px solid  grey;
 }
 
 .nav-list {
@@ -45,10 +41,6 @@
   color: #ff0000;
 }
 
-.fr-icon {
-  color: #ff0000 !important;
-}
-
 .hint {
   width: 200px;
   height: 100px;
@@ -67,4 +59,12 @@
   top: 0px;
   font-size: 30px;
   font-weight: 800;
+}
+
+.underline {
+  position: absolute;
+  top: 100px;
+  border-bottom: 3px solid black;
+  padding-bottom: 10px;
+
 }
