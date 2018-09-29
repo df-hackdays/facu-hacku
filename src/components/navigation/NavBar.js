@@ -3,6 +3,12 @@ import {Link} from 'react-router-dom'
 import './nav.css'
 
 class NavBar extends Component {
+  
+  getHint() {
+    return (
+     <div>error</div>
+    )
+  }
   render() {
     return <header className="nav-wrapper container">
     <div className="nav-bar row col-md-12">
@@ -10,9 +16,9 @@ class NavBar extends Component {
         <img src="" />
       </div>
       <ul className="nav-list">
-        <button className="hint"><Link to='/'>GET A HINT</Link></button>
+        <button className="hint" onClick={this.getHint}><Link to='/'>GET A HINT</Link></button>
         <button className="mentor">ASK A MENTOR</button>
-       
+        
       </ul>
     </div>
     </header>

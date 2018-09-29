@@ -9,6 +9,7 @@ class Home extends Component {
       <NavBar/>
       <div className="container">
       <img className="code" src={code}/>
+      <div className="hintMessage">error get a </div>
     </div></div>)
     
   }
