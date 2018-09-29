@@ -7,9 +7,6 @@ import './hints.css'
 import '../../components/Button.css'
 
 class Hints extends Component {
-  componentDidMount = () => {
-    this.props.getHint()
-  }
   nextHint = () => {
     this.props.getHint()
   }
@@ -19,22 +16,17 @@ class Hints extends Component {
 
     return (
       <div className="container">
-      <div className="hintMessage">{hint}</div>
-      <div>
-        Did that help? </div>
+        <div className="hintMessage">{hint}</div>
+        <div>Did that help? </div>
         <ul className="yesNo">
-        
-            <button className="button">
-              <Link to="/">Yes</Link>
-            </button>
-            <button className="button" onClick={this.nextHint}>
-              No
-            </button>
-         
-
+          <button className="button">
+            <Link to="/">Yes</Link>
+          </button>
+          <button className="button" onClick={this.nextHint}>
+            No
+          </button>
         </ul>
-        
-    </div>
+      </div>
     )
   }
 }

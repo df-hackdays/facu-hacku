@@ -1,9 +1,9 @@
-import {GET_HINT} from './types'
+import { GET_HINT } from './types'
 
 export function getHint() {
-    return (dispatch) => {
-        dispatch({
-            type: GET_HINT
-        })
-    }
+  return dispatch => {
+    dispatch({
+      type: GET_HINT
+    })
+  }
 }
