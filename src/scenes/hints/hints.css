@@ -1,16 +1,20 @@
 .container {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
-.hintMessage {
-    color: black;
-    font-weight: 900;
-    padding: 100px;
-    
+.title {
+  color: white;
+  text-outline: 1px 1px 0;
+  font-weight: 900;
+  padding: 150px;
+}
+.message {
+  color: black;
+  font-weight: 900;
+  padding: 100px;
 }
 .yesNo {
-    color: black;
+  color: black;
 }

@@ -19,7 +19,7 @@ class Section extends Component {
           <button
             className="button"
             onClick={() => {
-              this.buttonClick(1)
+              this.buttonClick(0)
             }}
           >
             <Link to="/hints"> Section 1</Link>
