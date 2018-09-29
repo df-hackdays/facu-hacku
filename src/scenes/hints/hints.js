@@ -18,21 +18,21 @@ class Hints extends Component {
 
     return (
       <div className="nav-bar row col-md-12">
+        <div className="hintMessage">{hint}</div>
         <div className="nav-logo" />
         Did that help?
         <br />
         <ul className="nav-list">
           <li>
-            <button className="hint">
+            <button className="button">
               <Link to="/">Yes</Link>
             </button>
-            <button className="mentor" onClick={this.nextHint}>
+            <button className="button" onClick={this.nextHint}>
               No
             </button>
             <div className="underline" />
           </li>
         </ul>
-        <div className="hintMessage">{hint}</div>
       </div>
     )
   }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import HintButton from '../../components/hintButton'
 import MentorButton from '../../components/mentorButton'
@@ -17,9 +16,7 @@ class Home extends Component {
           <MentorButton />
         </div>
 
-        <div>
-          {/* <div className="hintMessage">{hint}</div> */}
-        </div>
+        <div />
       </div>
     )
   }

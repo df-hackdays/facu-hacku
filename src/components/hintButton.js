@@ -7,9 +7,9 @@ class hintButton extends Component {
   render() {
     return (
       <div>
-        <button className="hint">
+        <div className="button">
           <Link to="/section"> Get a Hint</Link>
-        </button>
+        </div>
       </div>
     )
   }
