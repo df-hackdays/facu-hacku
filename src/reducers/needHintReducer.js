@@ -19,7 +19,7 @@ export function needHintReducer(state = { index: 0 }, action) {
         text: 'If there are any unset variables, the program cannot continue as they are not defined.'
       },
       positive: {
-        title: 'CLC Coder Top Tip:',
+        title: 'Good job! You figured it out!',
         text: "Don't be afraid to ask questions!  Coding is continous learning!"
       }
     },
