@@ -1,21 +1,29 @@
 .code {
     position: absolute;
     top: 200px;
-    width: 600px;
+    width: 800px;
     border-width: 1px;
     border-color: black;
     border-style: solid;
 
 }
+.output {
+    position: absolute;
+    top: 600px;
+    width: 800px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
 .hintMessage {
     position: absolute;
-    top: 300px;
+    top: 400px;
     border-style: solid;
     border-width: 1px;
     border-color: black;
     background-color: white;
-    width: 500px;
-    height: 300px;
-    left: 300px;
+    width: 800px;
+    height: 200px;
+    
 
 }
