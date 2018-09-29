@@ -5,7 +5,6 @@ import './section.css'
 
 class Section extends Component {
   render() {
-
     return (
       <div className="sectionContainer">
          Select the section you are having trouble with
@@ -26,6 +25,5 @@ class Section extends Component {
     )
   }
 }
-
 
 export default connect()(Section)

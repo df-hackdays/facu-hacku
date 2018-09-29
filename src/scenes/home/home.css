@@ -1,23 +1,19 @@
-
 .hintMessage {
-    position: absolute;
-    top: 500px;
-    /* border-style: solid;
+  position: absolute;
+  top: 500px;
+  /* border-style: solid;
     border-width: 1px;
     border-color: black; */
-    background-color: white;
-    width: 800px;
-    height: 200px;
-    left: 100px;
+  background-color: white;
+  width: 800px;
+  height: 200px;
+  left: 100px;
 }
 
-
-.buttonLocation { 
-    display: inline-block;
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-    height: 100px;
-
+.buttonLocation {
+  display: inline-block;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  height: 100px;
 }
-
