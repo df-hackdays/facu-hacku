@@ -12,11 +12,14 @@ class Hints extends Component {
   }
 
   render() {
-    let hint = this.props.hint
+    console.log(this.props.hint)
+
+    let hint = this.props.hint.hint
 
     return (
       <div className="container">
-        <div className="hintMessage">{hint}</div>
+        <h1 className="title">{hint.title}</h1>
+        <div className="message">{hint.text}</div>
         <div>Did that help? </div>
         <ul className="yesNo">
           <button className="button">

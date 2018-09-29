@@ -4,26 +4,34 @@ import { START_HINT, GET_HINT } from '../actions/types'
 export function needHintReducer(state = { index: 0 }, action) {
   const hints = [
     {
-      hint: 'Are there any highlighted errors in your code?',
-      description: 'Make sure there are no highlighted errors, as they are showing parts of the code that the program cannot understand.'
+      hint: {
+        title: 'Are there any highlighted errors in your code?',
+        text: 'Make sure there are no highlighted errors, as they are showing parts of the code that the program cannot understand.'
+      },
+      positive: {
+        title: 'Good job!',
+        text: "Don't worry!  Everyone makes misakes!"
+      }
     },
     {
-      hint: 'Did you make sure all variables were set?',
-      description: 'If there are any unset variables, the program cannot continue as they are not defined. '
-    },
-    {
-      hint: 'Did you blah',
-      description: 'blah'
+      hint: {
+        title: 'Did you make sure all variables were set?',
+        text: 'If there are any unset variables, the program cannot continue as they are not defined.'
+      },
+      positive: {
+        title: 'Good catch!',
+        text: 'Forgetting to set variables is a common mistake everyone makes!'
+      }
     }
   ]
-  console.log(action)
+  console.log(hints)
   switch (action.type) {
     case START_HINT: {
       let index = action.index
       console.log('Index: ' + index)
       return {
         index: index,
-        hint: hints[index].hint
+        hint: hints[index]
       }
     }
     case GET_HINT: {
@@ -31,13 +39,13 @@ export function needHintReducer(state = { index: 0 }, action) {
       console.log('Index: ' + index)
       return {
         index: index,
-        hint: hints[index].hint
+        hint: hints[index]
       }
     }
   }
   return {
     ...state,
-    hint: hints[state.index].hint
+    hint: hints[state.index]
   }
 }
 
