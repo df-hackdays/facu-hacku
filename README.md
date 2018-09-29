@@ -1,4 +1,4 @@
-# facu-hacku
+# facu-hacku: CLC CheckIn
 
 FacU-HackU FactoryU HackDays Team!
 
