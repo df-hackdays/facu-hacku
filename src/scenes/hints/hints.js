@@ -55,6 +55,7 @@ class Hints extends Component {
             <button className="button" onClick={this.nextHint}>
               No
             </button>
+            <div className="space" />
             <button className="button" onClick={this.handleClick}>
               <Link to="/mentor">Call a Mentor</Link>
             </button>
